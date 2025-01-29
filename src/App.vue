@@ -1,13 +1,27 @@
 <template>
-  <nav>
+  <!-- <nav>
     <router-link to="/">Home</router-link> |
     <router-link to="/about">About</router-link>
   </nav>
-  <router-view/>
+  <router-view/> -->
+  <Navbar></Navbar>
+  <Home/>
 </template>
 
+<script>
+import Navbar from './components/Navbar'
+import Home from './views/Home'
+export default {
+  components: {
+    Navbar,
+    Home,
+    
+  }
+}
+</script>
+
 <style>
-#app {
+/* #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -26,5 +40,5 @@ nav a {
 
 nav a.router-link-exact-active {
   color: #42b983;
-}
+} */
 </style>

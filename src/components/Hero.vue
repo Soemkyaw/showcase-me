@@ -1,0 +1,40 @@
+<template>
+  <section class="md:mx-8 lg:my-16">
+    <div
+      class="grid grid-cols-1 md:grid-cols-4 grid-rows-2 py-8 md:py-16 gap-2 mt-8 px-5"
+    >
+      <!-- Title Section -->
+      <div class="row-start-1 col-span-full md:col-span-3">
+        <h1 class="text-4xl lg:text-6xl font-bold leading-tight">
+          PHP / LARAVEL
+        </h1>
+        <h1 class="text-4xl lg:text-6xl font-bold leading-tight">
+            WEB DEVELOPER
+        </h1>
+      </div>
+
+      <!-- Description Section -->
+      <div
+        class="row-start-2 col-span-full lg:col-start-4 md:col-start-3 md:col-span-2 md:text-left"
+        style="text-align: justify;"
+      >
+        <p class="text-sm leading-relaxed">
+          Through strategic design and refined development, I create websites
+          that help others achieve more by building an effective online
+          presence.
+        </p>
+      </div>
+    </div>
+
+    <div>
+        <img src="../assets/bg_test.jpg"  class=" border w-full">
+    </div>
+  </section>
+</template>
+
+<script>
+export default {};
+</script>
+
+<style>
+</style>

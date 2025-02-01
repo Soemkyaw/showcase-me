@@ -1,11 +1,11 @@
 <template>
   <nav class="border-b border-b-gray-200 dark:bg-gray-900">
     <div
-      class=" flex flex-wrap items-center justify-between md:mx-8  py-4"
+      class=" flex flex-wrap items-center justify-between md:mx-8 mx-5 py-4"
     >
     <div class=" lg:text-xl flex items-center">
-            <img src="../assets/logo.png" class=" w-10 h-10 border rounded-full">
-            <span class=" ml-3 font-medium">SOE MOE KYAW</span>
+            <img src="../assets/images/no_bg_profile.png" class=" w-16 h-16 bg-gray-500 border rounded-full object-cover">
+            <span class=" ml-3 font-medium sm:text-xl">SOE MOE KYAW</span>
         </div>
       <button
         data-collapse-toggle="navbar-default"

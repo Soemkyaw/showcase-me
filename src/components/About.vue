@@ -1,7 +1,7 @@
 <template>
   <section class="md:mx-8 my-10">
     <div class="mx-auto rounded-md lg:px-26 md:px-16 px-5  py-12">
-      <h3 class="text-center text-4xl text-gray-800 mb-5">ABOUT ME</h3>
+      <h3 class="text-center md:text-4xl text-2xl text-gray-800 mb-5">ABOUT ME</h3>
       <div class="md:flex">
         <!-- Left Column -->
         <div
@@ -31,7 +31,7 @@
             ></div>
             <img
               class="relative border-2 border-black w-56"
-              src="https://img.freepik.com/premium-photo/handshake-white-isolated-3d-illustration_356060-375.jpg?ga=GA1.1.2103699899.1714031695&semt=ais_hybrid"
+              src="../assets/images/about_me.jpg"
               alt=""
             />
           </div>

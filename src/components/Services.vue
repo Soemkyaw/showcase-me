@@ -4,8 +4,8 @@
       <div class="md:flex">
         <!-- Left Column -->
         <div class="md:w-1/2 mt-5 mb-10 pr-4 flex flex-col justify-center items-center">
-          <h2 class="lg:text-4xl  sm:text-3xl text-2xl text-gray-800  text-center">What I Provide</h2>
-          <h2 class="lg:text-4xl  sm:text-3xl text-2xl text-gray-900  font-semibold text-center">SERVICES</h2>
+          <h2 class="md:text-4xl text-2xl text-gray-800  text-center">What I Provide</h2>
+          <h2 class="md:text-4xl text-2xl text-gray-900  font-semibold text-center">SERVICES</h2>
         </div>
         <!-- Right Column -->
         <div class="md:w-1/2 md:pl-4 max-h-50 overflow-y-auto customScroll  md:border-l md:border-gray-400 ">

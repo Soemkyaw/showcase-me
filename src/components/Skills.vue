@@ -1,6 +1,6 @@
 <template>
   <section class="md:mx-8 md:my-10 my-10">
-    <h3 class="text-center text-2xl font-medium text-gray-800">What Technical Skills I Use</h3>
+    <h3 class="text-center md:text-4xl text-2xl text-gray-800 uppercase mx-5">What Technical Skills I Use</h3>
     <div class="bg-gray-100 text-black/90 rounded-xl mt-3 mx-5">
       <div class="lg:px-26 md:px-18 px-3 py-12 grid lg:grid-cols-5 sm:grid-cols-3 grid-cols-2 gap-5">
         <!-- card go here  -->

@@ -1,11 +1,11 @@
 <template>
-  <nav class="border-b border-b-gray-200 dark:bg-gray-900">
+  <nav class="border-b border-b-gray-200 dark:border-b-gray-700">
     <div
       class=" flex flex-wrap items-center justify-between md:mx-8 mx-5 py-4"
     >
     <div class=" lg:text-xl flex items-center">
-            <img src="../assets/images/no_bg_profile.png" class=" w-16 h-16 bg-gray-500 border rounded-full object-cover">
-            <span class=" ml-3 font-medium sm:text-xl">SOE MOE KYAW</span>
+            <img src="../assets/images/no_bg_profile.png" class=" w-16 h-16 bg-gray-500 border border-black dark:border-white rounded-full object-cover">
+            <span class=" ml-3 font-medium sm:text-xl dark:text-white">SOE MOE KYAW</span>
         </div>
       <button
         data-collapse-toggle="navbar-default"
@@ -36,31 +36,36 @@
           class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700"
         >
           <li class=" md:mx-3">
-            <router-link
+            <div
               to="/"
-              class="block py-2 text-gray-900 text-sm rounded"
+              class="block py-2 text-gray-900 dark:text-gray-50 text-sm rounded"
               aria-current="page"
-              >WORK</router-link
+              >WORK</div
             >
           </li>
           <li class=" md:mx-3">
-            <router-link
-              to="/posts"
-              class="block py-2 text-gray-900 text-sm rounded"
-              >SERVICES</router-link
+            <div
+              class="block py-2 text-gray-900 dark:text-gray-50 text-sm rounded"
+              >SERVICES</div
             >
           </li>
           <li class=" md:mx-3">
-            <router-link
-              to="/contact"
-              class="block py-2 text-gray-900 text-sm rounded"
-              >PROCESS</router-link>
+            <div
+              
+              class="block py-2 text-gray-900 dark:text-gray-50 text-sm rounded"
+              >PROCESS</div>
           </li>
           <li>
-            <router-link
-              to="/contact"
-              class="inline-block bg-gray-900 text-white px-5 py-2 text-sm rounded"
-              >WORK WITH ME</router-link>
+            <div
+              
+              class="inline-block bg-gray-900 text-white dark:bg-gray-100 dark:text-gray-900 px-5 py-2 text-sm rounded"
+              >WORK WITH ME</div>
+          </li>
+          <li>
+            <div
+              @click="toggleDark()"
+              class="block py-2 text-gray-900 dark:text-gray-50 text-sm rounded cursor-pointer"
+              >{{ isDark ? "dark" : "light" }}</div>
           </li>
         </ul>
       </div>
@@ -69,8 +74,16 @@
 </template>
 
 <script>
-export default {
+import { useDarkMode } from '@/composables/useDarkMode';
 
+
+
+export default {
+  setup(props) {
+    let { isDark, toggleDark } = useDarkMode();
+
+    return {isDark,toggleDark}
+  }
 }
 </script>
 

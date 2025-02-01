@@ -1,5 +1,6 @@
 <template>
-  <main>
+  <main class=" dark:bg-gray-900">
+    <Navbar></Navbar>
     <Hero></Hero>
     <Works></Works>
     <About></About>
@@ -10,6 +11,7 @@
 </template>
 
 <script>
+import Navbar from '../components/Navbar'
 import About from '../components/About'
 import Footer from '../components/Footer'
 import Services from '../components/Services'
@@ -21,6 +23,7 @@ import Hero from '../components/Hero'
 
 export default {
   components: {
+    Navbar,
     About,
     Footer,
     Services,

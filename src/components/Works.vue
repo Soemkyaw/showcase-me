@@ -1,6 +1,6 @@
 <template>
   <section class="md:mx-8 my-5">
-    <h3 class="text-3xl font-semibold px-5 text-gray-800">SELECTED WORKS</h3>
+    <h3 class="text-3xl font-semibold px-5 text-gray-800 dark:text-gray-100">SELECTED WORKS</h3>
     <div class="grid sm:grid-cols-2 gap-5 my-5 mx-5">
       <div class="bg-blue-300 relative w-full aspect-w-16 aspect-h-9 group">
         <img
@@ -173,7 +173,7 @@
     </div>
     <div class="text-center">
       <button
-        class="px-5 py-2 bg-black/90 text-gray-200 rounded-xl hover:bg-black/70 hover:text-white uppercase"
+        class="px-5 py-2 rounded-xl uppercase bg-black/90  text-gray-200 hover:bg-black/70 hover:text-white dark:bg-white/90 dark:text-gray-800 dark:hover:bg-white  dark:hover:text-gray-900 "
       >
         See more
       </button>

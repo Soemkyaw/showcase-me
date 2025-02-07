@@ -1,6 +1,6 @@
 <template>
   <section class="md:mx-8 my-10">
-    <div class="mx-auto rounded-md lg:px-26 md:px-16 px-5  py-12">
+    <div class="max-w-[1400px] mx-auto rounded-md lg:px-26 md:px-16 px-5  py-12">
       <h3 class="text-center md:text-4xl text-2xl text-gray-800 mb-5 dark:text-gray-100">ABOUT ME</h3>
       <div class="md:flex">
         <!-- Left Column -->
@@ -31,7 +31,7 @@
             ></div>
             <img
               class="relative border-2 border-black w-56 dark:border-gray-300"
-              src="../assets/images/about_me.jpg"
+              src="../../public/images/about_me.jpg"
               alt=""
             />
           </div>

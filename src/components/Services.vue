@@ -1,6 +1,6 @@
 <template>
   <section class="md:mx-8 md:my-10 my-10">
-    <div class="mx-auto bg-white rounded-md lg:px-26 md:16 px-5 py-12 dark:bg-gray-900">
+    <div class="max-w-[1400px] mx-auto bg-white rounded-md lg:px-26 md:16 px-5 py-12 dark:bg-gray-900" id="services">
       <div class="md:flex">
         <!-- Left Column -->
         <div class="md:w-1/2 mt-5 mb-10 pr-4 flex flex-col justify-center items-center">

@@ -1,7 +1,7 @@
 <template>
   <section class="md:mx-8 my-5">
-    <div class=" max-w-[1400px] mx-auto">
-      <h3 class="text-4xl font-semibold px-5 text-gray-800 dark:text-gray-100 text-center">
+    <div class=" max-w-[1400px] mx-auto"  id="works">
+      <h3 class="text-4xl font-semibold px-5 text-gray-800 dark:text-gray-100 text-center mb-5">
         SELECTED WORKS
       </h3>
       <!-- work card here  -->
@@ -9,7 +9,7 @@
         <div
           v-for="work in works"
           :key="work.title"
-          class="bg-blue-300 relative w-full aspect-w-16 aspect-h-9 group"
+          class="bg-blue-300 relative w-full rounded-md overflow-hidden aspect-w-16 aspect-h-9 group"
         >
           <img class="w-full h-full object-cover" :src="work.photo" alt="" />
           <div
@@ -61,9 +61,9 @@ export default {
   setup(props) {
     let { works } = getWorks();
 
-    onMounted(() => {
-      console.log(works);
-    });
+    // onMounted(() => {
+    //   console.log(works);
+    // });
 
     return { works };
   },

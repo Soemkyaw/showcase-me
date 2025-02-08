@@ -1,7 +1,7 @@
 <template>
-  <nav class="border-b border-b-gray-200 dark:border-b-gray-700">
+  <nav class="border-b border-b-gray-200 dark:border-b-gray-700" id="navbar">
     <div class="flex flex-wrap items-center justify-between md:mx-8 mx-5 py-4">
-      <div class="lg:text-xl flex items-center">
+      <router-link to="/" class="lg:text-xl flex items-center">
         <img
           src="../../public/images/no_bg_profile.png"
           class="w-16 h-16 bg-gray-500 border border-black dark:border-white rounded-full object-cover"
@@ -9,7 +9,7 @@
         <span class="ml-3 font-medium sm:text-xl dark:text-white"
           >SOE MOE KYAW</span
         >
-      </div>
+      </router-link>
       <button
         data-collapse-toggle="navbar-default"
         type="button"
@@ -39,33 +39,35 @@
           class="font-medium flex flex-col items-center p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700"
         >
           <li class="md:mx-3">
-            <div
-              to="/"
+            <a
+              href="#works"
               class="block py-2 text-gray-900 dark:text-gray-50 text-sm rounded"
               aria-current="page"
             >
-              WORK
-            </div>
+              WORKS
+            </a>
           </li>
           <li class="md:mx-3">
-            <div
-              class="block py-2 text-gray-900 dark:text-gray-50 text-sm rounded"
+            <a
+              href="#about"
+              class="block py-2 text-gray-900 dark:text-gray-50 text-sm rounded uppercase"
             >
-              SERVICES
-            </div>
+              About
+            </a>
           </li>
           <li class="md:mx-3">
-            <div
-              class="block py-2 text-gray-900 dark:text-gray-50 text-sm rounded"
+            <a
+              href="#services"
+              class="block py-2 text-gray-900 dark:text-gray-50 text-sm rounded uppercase"
             >
-              PROCESS
-            </div>
+              services
+            </a>
           </li>
           <li class="md:mx-3 my-3">
             <div
-              class="inline-block bg-gray-900 text-white dark:bg-gray-100 dark:text-gray-900 px-5 py-2 text-sm rounded"
+              class="inline-block bg-gray-900 text-white dark:bg-gray-100 dark:text-gray-900 px-5 py-2 text-sm rounded uppercase"
             >
-              WORK WITH ME
+              work with me
             </div>
           </li>
           <li>
@@ -83,7 +85,7 @@
                 />
               </svg>
             </div>
-            <div class=" cursor-pointer" v-else @click="toggleDark()">
+            <div class="cursor-pointer" v-else @click="toggleDark()">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 24 24"

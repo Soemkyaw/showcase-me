@@ -28,7 +28,7 @@
     </div>
 
     <div>
-        <img src="../assets/bg_test.jpg"  class=" border w-full dark:border-black">
+        <img src="../../public/images/544shots_so.png"  class=" border w-full dark:border-black max-h-[600px] object-cover">
     </div>
   </section>
 </template>
